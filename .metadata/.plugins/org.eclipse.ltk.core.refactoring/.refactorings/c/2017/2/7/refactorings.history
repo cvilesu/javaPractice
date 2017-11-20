@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Glavna.java&apos; to &apos;d/src&apos;&#x0D;&#x0A;- Original project: &apos;c&apos;&#x0D;&#x0A;- Destination element: &apos;d/src&apos;&#x0D;&#x0A;- Original element: &apos;Glavna.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=d/src" element1="/src&lt;{Glavna.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1486386046188" units="1" version="1.0"/>
+</session>
