@@ -1,0 +1,178 @@
+Git
+ovanje
+
+package wwww;
+import java.util.Scanner;
+public class W4 {
+
+	public static void main(String[] args) {
+		Scanner Input = new Scanner(System.in);
+		int[] niz = new int[1024];
+		int brojclanova=5;
+		int brojac=0;
+		int broj;
+		System.out.println("Ukucavajte elemente pa nulom zavrsite niz: ");
+		for(brojac=0;brojac<brojclanova;brojac++)
+		{
+			broj=Input.nextInt();
+			niz[brojac]=broj;
+		}
+		System.out.println("Ukucani brojevi u nizu su: ");
+		for(brojac=0;brojac<brojclanova;brojac++)
+				{
+					System.out.println(niz[brojac]+", ");	
+				}
+	}
+
+}
+package www;
+import java.util.Scanner;
+public class W3 {
+
+	public static void main(String[] args) {
+	Scanner Input = new Scanner(System.in);
+	int[] niz = new int[1000];
+	int zbir=0;
+	int brojac1=0;
+	int brojac2=0;
+	int broj=1;
+	System.out.println("Ukucavajte elemente pa nulom zavrsite niz: ");
+	while(broj!=0) {
+		broj=Input.nextInt();
+		niz[brojac1]=broj;
+		brojac1++;
+	} 
+	System.out.println("Ukucani brojevi u nizu su: ");
+	for(brojac2=0;brojac2<brojac1-1;brojac2++)
+			{
+				zbir+=niz[brojac2];
+				System.out.print(niz[brojac2]+", ");	
+			}
+	System.out.print("\nNjihov zbir je: "+zbir);
+	}
+}
+
+package ww;
+import java.util.Scanner;
+public class W2 {
+
+	public static void main(String[] args) {
+	Scanner Input = new Scanner(System.in);
+	int[] niz = new int[1000];
+	int brojac1=0;
+	int brojac2=0;
+	int broj;
+	System.out.println("Ukucavajte elemente pa nulom zavrsite niz: ");
+	do {
+		broj=Input.nextInt();
+		niz[brojac1]=broj;
+		brojac1++;
+	} while(broj!=0);
+	System.out.println("Ukucani brojevi u nizu su: ");
+	for(brojac2=0;brojac2<brojac1-1;brojac2++)
+			{
+				System.out.println(niz[brojac2]+", ");	
+			}
+	}
+}
+
+package yy;
+import java.io.*;
+
+public class Y2 {
+
+	public static void main(String[] args) throws IOException {
+		BufferedReader In = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Ukucaj broj redova: ");
+		int br = Integer.parseInt(In.readLine());
+		int brojac1=0;
+		int brojac2=0;
+		int brojac3=0;
+		for(brojac1=0;brojac1<br;brojac1++)
+			{
+				for(brojac2=0;brojac2<(br-brojac1-1);brojac2++)
+				{
+					System.out.print(" ");
+				}
+				for(brojac3=0;brojac3<(br-brojac2+brojac1);brojac3++)
+				{
+					System.out.print("*");
+				}
+				System.out.print("\n");
+			}
+		System.out.print("\nUkucaj korak za piramidu sa brojevima: ");
+		int korak = Integer.parseInt(In.readLine());
+		int zbir=0;
+		for(brojac1=0;brojac1<br;brojac1++)
+		{
+			for(brojac2=0;brojac2<(br-brojac1-1);brojac2++)
+			{
+				System.out.print(" ");
+			}
+			for(brojac3=0;brojac3<(br-brojac2+brojac1);brojac3++)
+			{
+				zbir+=korak;
+				System.out.print(zbir-korak+", ");
+			}
+			System.out.print("\n");
+		}
+	}
+
+}
+
+package y;
+import java.util.Scanner;
+public class Y1 {
+
+	public static void main(String[] args) {
+	Scanner Input = new Scanner(System.in);	
+	System.out.println("Ukucaj broj fibonacci brojeva u nizu: ");
+	int bfbn=Input.nextInt();
+	int[] fibniz = new int[bfbn];
+	int brojac=0;
+	fibniz[0]=0;
+	fibniz[1]=1;
+	for(brojac=2;brojac<bfbn;brojac++)
+		{
+			fibniz[brojac]=fibniz[brojac-2]+fibniz[brojac-1];
+		}
+	System.out.print("Fibonacci niz cine: ");
+	for(brojac=0;brojac<bfbn;brojac++)
+		{
+		System.out.print(fibniz[brojac]+", ");
+		}
+	}
+
+}
+
+
+
+
+
+
+
+package ghjkgjk;
+public class Dgfhgh {
+public static void main(String[] args) {
+		int a=30;
+		int b=15;
+		System.out.println("a+b= "+(a+b));
+		System.out.println("a-b= "+(a-b));
+		System.out.println("a*b= "+(a*b));
+		System.out.println("a/b= "+(a/b));
+		System.out.println("a%b= "+(a%b));
+		System.out.println("a++ = "+(++a));
+		System.out.println("b-- = "+(--b));
+		System.out.println("");
+		a=30;
+		b=15;
+		System.out.println("a&b= "+(a&b));
+		System.out.println("a|b= "+(a|b));
+		System.out.println("~a= "+(~a));
+		System.out.println("a^b= "+(a^b));
+		System.out.println("a>> 2 ="+(a>>2));
+		System.out.println("a<< 2 = "+(a<<2));
+		System.out.println("b>>> 2 = "+(b>>>2));
+	}
+
+}
